@@ -7,6 +7,6 @@ export POSTGRES_DB=postgres
 export AWS_BUCKET=arn:aws:s3:::p3-adm
 export AWS_REGION=us-east-2
 export AWS_PROFILE=default
-export JWT_SECRET=goodby
+export JWT_SECRET=hellow
 
 export URL=http://localhost:8100
