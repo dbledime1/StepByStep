@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: udagram-frontend
+        image: dbledime1/udagram-frontend
+        command: ["sleep", "infinity"]
+        ports:
+        - containerPort: 8100
+        resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m
+    
+
+       
